@@ -24,6 +24,9 @@ body {
   font-size: 40px;
   justify-self: end;
 }
+.winner {
+  color: red;
+}
 .h2Style2 {
   justify-self: self-start;
 }

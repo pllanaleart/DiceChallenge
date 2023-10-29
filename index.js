@@ -49,7 +49,7 @@ function diceRoll(diceClicked, diceName) {
       document.querySelector(".h1Container").textContent =
         "Refresh to play again";
       const newElement = document.createElement("h2");
-      newElement.className = "h2Style";
+      newElement.className = "h2Style winner";
       if (random1 > random2) {
         newElement.textContent = "Player 1 Wins!!";
       } else if (random1 < random2) {
