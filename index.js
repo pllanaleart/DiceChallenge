@@ -15,28 +15,9 @@ dice2.addEventListener("click", function () {
 function diceRoll(diceClicked, diceName) {
   if (diceClicked === false) {
     var random = Math.floor(Math.random() * 6) + 1;
+    var imageSrc = "./images/dice" + random + ".png";
+    document.querySelector(diceName).setAttribute("src", imageSrc);
 
-    if (random === 2) {
-      document
-        .querySelector(diceName)
-        .setAttribute("src", "./images/dice2.png");
-    } else if (random === 3) {
-      document
-        .querySelector(diceName)
-        .setAttribute("src", "./images/dice3.png");
-    } else if (random === 4) {
-      document
-        .querySelector(diceName)
-        .setAttribute("src", "./images/dice4.png");
-    } else if (random === 5) {
-      document
-        .querySelector(diceName)
-        .setAttribute("src", "./images/dice5.png");
-    } else if (random === 6) {
-      document
-        .querySelector(diceName)
-        .setAttribute("src", "./images/dice6.png");
-    }
     if (diceName === "#dice1") {
       dice1IsClicked = true;
       random1 = random;
